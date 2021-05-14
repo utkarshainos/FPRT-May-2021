@@ -1,0 +1,15 @@
+When we type www.attainu.com, the browser figures out the IP address of the website by DNS or domain name system lookup. It proceeds as follows:
+-browser cache - the browser cache is looked into for any existing cache as the browser caches the dns records for some times.
+-os cache - if the required data is not found in the browser cache then the browser makes a call to os cache.
+
+There are a futher few more caches like router cache and isp dns cache which are looked up for data.
+
+If no information is retieved in the above steps, then the request is sent to top or root server of the DNS hierarchy. It tells the resolver to search top level domain. Now the resolver asks TLD server for the IP address of the domain name(www.attainu.com).
+
+After the ip addrss is retrieved it is stored in cache so when the next time the url is hit, the browser doesnt have to go to all this process again.
+
+Now the browser initiates a connection with the server The most commonly used protocal nowadays is TCP/IP which stands for transmission control protocol. A connection is built between the two using a process called TCP handshake.
+
+Now both, the server and the browser can contact each other. The server delivers the required file which are server from the root url. The files contain an HTML file and is rendered in the browser. Further the information is servered to the webpage using apis.
+
+www.attainu.com is secured with SSl, meaning all the transactions between the server and the browser are secured from men in the middle attcks. The most commonly used ports for http is 80 and for https is 443. The data is served on port 443 using TLS/SSL protocol.

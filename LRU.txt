@@ -1,0 +1,14 @@
+Caching is a mechanism for storing data. From cache the data is readily available and is fetched sooner than RAM. There are difference caching mechanisms like MRU,LRU etc
+
+
+LRU stands for least recently used which mean discard the data which is least recenlty used fist. Under the hood, an LRU cache is often implemented by pairing a doubly linked list with a hash map.
+
+The benifits of LRU are:
+1. the data is stored in the order of most used item to least used item and hence these items are accessible in O(n) time complexity.
+2. each update in the cache takes only O(1) time.
+
+The disadvantages are:
+1. It requires linked list of the length n for tracking n items and hash map for holding n items, and hence the space complexity of the LRU is O(n).
+
+
+One of the prcatical use case of LRU is caching mechanism for websites. Whenever a user visits the website, the initial load time is longer than the following website loads. This is because as soon as the user visits the site, the implemented caching stores the website in the cache. As most of the user visits the site, the site will not take time to load as it will be served from the cache. Ideally static or blog sites are generally benfitted more as the refresh time in the cache reload strategy can be increased and hence allowing the data to live for longer time in cache.

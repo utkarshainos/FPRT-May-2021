@@ -1,0 +1,10 @@
+NAT stands for Network Address Translation. In NAT, Private IP addresses are translated into the public IP address.it uses IPv4 address. It’s a way to map multiple local private addresses to a public one before transferring the information. There are three different types of NATs.
+1. Static NAT
+2. Dynamic NAT
+3. PAT(port address translation)
+
+Address Resolution Protocol (ARP) is a procedure for mapping a dynamic Internet Protocol address (IP address) to a permanent physical machine address in a local area network (LAN). The physical machine address is also known as a Media Access Control or MAC address. It helps in finding the MAC(Media Access Control) address given the IP address of the system i.e. the main duty of the ARP is to convert the 32-bit IP address(for IPv4) to 48-bit address i.e. the MAC address.
+
+When a new computer joins a LAN, it is assigned a unique IP address to use for identification and communication. When an incoming packet destined for a host machine on a particular LAN arrives at a gateway, the gateway asks the ARP program to find a MAC address that matches the IP address. A table called the ARP cache maintains a record of each IP address and its corresponding MAC address.
+
+

@@ -1,0 +1,11 @@
+A process in operating systems uses different resources and uses resources in the following way. 
+- Requests a resource 
+- Use the resource 
+- Releases the resource 
+
+Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process. 
+
+Following are deadlock characteristics :
+Mutual Exclusion: One or more than one resource are non-shareable (There should be a resource that can only be held by one process at a time.) 
+Hold and Wait: A process can hold multiple resources and still request more resources from other processes which are holding them. 
+No Preemption: A process is waiting for the resource held by the second process, which is waiting for the resource held by the third process and so on, till the last process is waiting for a resource held by the first process. This forms a circular chain
